@@ -8,38 +8,29 @@ Repository pattern implementation connected to a writable store.
 
 ### Usage
 
-Here is a basic cart system.<br>
-The quote refers to the item that contains the product and its quantity.
+Here is a basic CRUD example:
 
 ```js
-// src/stores/cart.js
+// src/stores/books.js
 import depot from 'svelte-depot'
 
-const cart = depot()
-const { store, add, find, update, remove } = cart
+const books = depot()
+const { store, add, find, update, remove } = books
 
-// Add a new quote item into the cart
-export function addProduct(product, quantity) {
-    add({ product, quantity })
+export function addBook(title, author) {
+    add({ title, author })
 }
 
-// If the product is in the cart, update its quantity
-// If the quantity < 0, remove the product
-export function updateProductQuantity(product, quantity) {
-    const quote = find({ product })
-    if (quote) {
-        if (quantity > 0) {
-            update({ ...quote, quantity })
-        } else {
-            remove(quote)
-        }
-    }
+export function updateBook(book) {
+    update(book)
 }
 
-// Remove the quote for a product
-export function removeProduct(product) {
-    const quote = find({ product })
-    quote && remove(quote)
+export function removeBook(book) {
+    remove(book)
+}
+
+export function findBookByAuthor(author) {
+    return find({ author })
 }
 
 export default store
