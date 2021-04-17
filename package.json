@@ -4,9 +4,7 @@
   "author": "ubermanu",
   "license": "MIT",
   "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/ubermanu/depot"
-  },
+  "repository": "https://github.com/ubermanu/depot",
   "source": "lib/index.js",
   "scripts": {
     "test": "jest"

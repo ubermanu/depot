@@ -2,6 +2,10 @@
 
 Repository pattern implementation connected to a writable store.
 
+### Install
+
+    npm i svelte-depot
+
 ### Usage
 
 Here is a basic cart system.<br>
