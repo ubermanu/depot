@@ -1,14 +1,16 @@
 {
   "name": "svelte-depot",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "ubermanu",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": "https://github.com/ubermanu/depot",
-  "source": "lib/index.js",
   "scripts": {
     "test": "jest"
   },
+  "files": [
+    "lib/index.js"
+  ],
   "dependencies": {
     "lodash": "^4.17.21",
     "svelte": "^3.37.0",
