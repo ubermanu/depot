@@ -1,5 +1,7 @@
 # Depot for Svelte
 
+[![CI](https://github.com/ubermanu/depot/actions/workflows/ci.yml/badge.svg)](https://github.com/ubermanu/depot/actions/workflows/ci.yml)
+
 Repository pattern implementation connected to a writable store.
 
 ### Install
