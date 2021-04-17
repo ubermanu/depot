@@ -1,0 +1,22 @@
+{
+  "name": "svelte-depot",
+  "version": "0.1.0",
+  "author": "ubermanu",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/ubermanu/depot"
+  },
+  "source": "lib/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "svelte": "^3.37.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}
