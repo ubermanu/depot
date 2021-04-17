@@ -4,7 +4,8 @@ Repository pattern implementation connected to a writable store.
 
 ### Usage
 
-Here is a basic cart
+Here is a basic cart system.<br>
+The quote refers to the item that contains the product and its quantity.
 
 ```js
 // src/stores/cart.js
