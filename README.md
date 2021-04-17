@@ -16,18 +16,30 @@ The quote refers to the item that contains the product and its quantity.
 import depot from 'svelte-depot'
 
 const cart = depot()
-const { store, add, update, remove } = cart
+const { store, add, find, update, remove } = cart
 
-export function addProductToCart(product, quantity) {
+// Add a new quote item into the cart
+export function addProduct(product, quantity) {
     add({ product, quantity })
 }
 
-export function updateQuoteQuantity(quote, quantity) {
-    update({ ...quote, quantity })
+// If the product is in the cart, update its quantity
+// If the quantity < 0, remove the product
+export function updateProductQuantity(product, quantity) {
+    const quote = find({ product })
+    if (quote) {
+        if (quantity > 0) {
+            update({ ...quote, quantity })
+        } else {
+            remove(quote)
+        }
+    }
 }
 
-export function removeQuote(quote) {
-    remove(quote)
+// Remove the quote for a product
+export function removeProduct(product) {
+    const quote = find({ product })
+    quote && remove(quote)
 }
 
 export default store
