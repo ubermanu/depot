@@ -17,17 +17,17 @@ Here is a basic CRUD example:
 import depot from 'svelte-depot'
 
 const books = depot()
-const { store, add, find, update, remove } = books
+const { store, add, save, remove, find } = books
 
-export function addBook(title, author) {
+export function createBook(title, author) {
     add({ title, author })
 }
 
 export function updateBook(book) {
-    update(book)
+    save(book)
 }
 
-export function removeBook(book) {
+export function deleteBook(book) {
     remove(book)
 }
 
