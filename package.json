@@ -1,6 +1,6 @@
 {
   "name": "svelte-depot",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": "ubermanu",
   "license": "MIT",
   "main": "lib/index.js",
