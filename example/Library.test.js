@@ -21,4 +21,11 @@ test('create a book', async () => {
   await tick()
 
   expect(document.querySelectorAll('.book').length).toBe(1)
+
+  const button = document.querySelector('.book .action.delete')
+  button.dispatchEvent(new window.MouseEvent('click'))
+
+  await tick()
+
+  expect(document.querySelectorAll('.book').length).toBe(0)
 })
