@@ -1,3 +1,5 @@
+import { Writable } from 'svelte/store'
+
 declare interface Options {
   uuid(): string
 
@@ -7,6 +9,8 @@ declare interface Options {
 export declare let defaults: Options
 
 declare interface Depot {
+  store: Writable<any>
+
   add(...items: object[]): Depot
 
   save(...items: object[]): Depot
