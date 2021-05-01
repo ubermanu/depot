@@ -1,4 +1,4 @@
-import depot from '../lib/index'
+import depot from '../lib/depot'
 
 const books = depot()
 const { store, add, save, remove, find } = books

@@ -5,13 +5,13 @@
   "author": "ubermanu",
   "license": "MIT",
   "type": "module",
-  "main": "lib/index.js",
+  "main": "lib/depot.js",
   "repository": "https://github.com/ubermanu/depot",
   "scripts": {
     "test": "jest"
   },
   "files": [
-    "lib/index.js"
+    "lib/depot.js"
   ],
   "dependencies": {
     "lodash-es": "^4.17.21",
