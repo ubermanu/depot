@@ -1,6 +1,12 @@
 {
   "name": "svelte-depot",
   "description": "Repository pattern for Svelte stores",
+  "keywords": [
+    "depot",
+    "svelte",
+    "repository",
+    "store"
+  ],
   "version": "0.9.1",
   "author": "ubermanu",
   "license": "MIT",
