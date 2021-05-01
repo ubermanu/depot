@@ -1,8 +1,9 @@
 {
   "name": "svelte-depot",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "ubermanu",
   "license": "MIT",
+  "type": "module",
   "main": "lib/index.js",
   "repository": "https://github.com/ubermanu/depot",
   "scripts": {
