@@ -4,14 +4,12 @@ specifiers:
   '@babel/preset-env': ^7.13.15
   jest: ^26.6.3
   lodash: ^4.17.21
-  max-validator: ^1.1.2
   prettier: ^2.2.1
   svelte: ^3.37.0
   uuid: ^8.3.2
 
 dependencies:
   lodash: 4.17.21
-  max-validator: 1.1.2
   svelte: 3.37.0
   uuid: 8.3.2
 
@@ -3301,10 +3299,6 @@ packages:
     dependencies:
       object-visit: 1.0.1
     dev: true
-
-  /max-validator/1.1.2:
-    resolution: {integrity: sha512-qavNA1yqmHwSVkYkLinYX4IMTrEGhRL/7wV4XQudukgApY0BtQ66EDIrOa+e19e9ZPZIxHtHQQguoOiCZrW2Dw==}
-    dev: false
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
