@@ -12,12 +12,15 @@
   "license": "MIT",
   "type": "module",
   "main": "lib/depot.js",
+  "module": "lib/depot.js",
+  "types": "lib/depot.d.ts",
   "repository": "https://github.com/ubermanu/depot",
   "scripts": {
     "test": "jest"
   },
   "files": [
-    "lib/depot.js"
+    "lib/depot.js",
+    "lib/depot.d.ts"
   ],
   "dependencies": {
     "lodash-es": "^4.17.21",
