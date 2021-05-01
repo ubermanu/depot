@@ -16,6 +16,7 @@
   "types": "lib/depot.d.ts",
   "repository": "https://github.com/ubermanu/depot",
   "scripts": {
+    "example": "cd example && vite",
     "test": "jest"
   },
   "files": [
@@ -29,9 +30,11 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.9",
     "dainte": "^0.1.5",
     "jest": "^26.6.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "vite": "^2.2.3"
   },
   "jest": {
     "moduleNameMapper": {

@@ -11,6 +11,7 @@
 <form on:submit|preventDefault={() => createBook($bookForm)}>
   <input type='text' name='title' bind:value={$bookForm.title}>
   <input type='text' name='author' bind:value={$bookForm.author}>
+  <button type='submit'>Add</button>
 </form>
 
 <ul class='library'>
@@ -18,7 +19,7 @@
     <li class='book'>
       <p class='title'>{book.title}</p>
       <p class='author'><small>from: {book.author}</small></p>
-      <button class="action delete" on:click={() => deleteBook(book)}>×</button>
+      <button class='action delete' on:click={() => deleteBook(book)}>×</button>
     </li>
   {/each}
 </ul>
