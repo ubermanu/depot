@@ -30,6 +30,6 @@ declare interface Depot {
   size(): number
 }
 
-declare function depot(options: Options): Depot
+declare function depot(options?: Options): Depot
 
 export default depot
