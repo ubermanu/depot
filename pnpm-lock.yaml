@@ -7,12 +7,12 @@ specifiers:
   lodash-es: ^4.17.21
   prettier: ^2.2.1
   svelte: ^3.37.0
-  uuid: ^8.3.2
+  uuid-random-es: ^2.0.0
 
 dependencies:
   lodash-es: 4.17.21
   svelte: 3.37.0
-  uuid: 8.3.2
+  uuid-random-es: 2.0.0
 
 devDependencies:
   '@babel/preset-env': 7.13.15
@@ -4547,6 +4547,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /uuid-random-es/2.0.0:
+    resolution: {integrity: sha512-kWe7+orZA3Nc/1M4fL+8txgr9WV313GOqEsqtRjtVW8PQSy7DLLsxGLvu/HCtD7fafi4UL+4D0Kd6jImoeUyKQ==}
+    dev: false
+
   /uuid/3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
     hasBin: true
@@ -4555,6 +4559,8 @@ packages:
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+    dev: true
+    optional: true
 
   /v8-to-istanbul/7.1.1:
     resolution: {integrity: sha512-p0BB09E5FRjx0ELN6RgusIPsSPhtgexSRcKETybEs6IGOTXJSZqfwxp7r//55nnu0f1AxltY5VvdVqy2vZf9AA==}
