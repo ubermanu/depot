@@ -3,7 +3,7 @@ import depot from '../lib/depot'
 const books = depot()
 const { store, add, save, remove, find } = books
 
-export function createBook(title, author) {
+export function createBook({ title, author }) {
   add({ title, author })
 }
 
