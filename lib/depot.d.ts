@@ -25,7 +25,7 @@ declare interface Depot {
 
   last(): object
 
-  find(where: object): object
+  find(where: object | string | any[] | Function): object
 
   size(): number
 }
