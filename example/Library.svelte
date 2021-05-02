@@ -1,16 +1,13 @@
 <script>
-  import { writable } from 'svelte/store'
   import books, { createBook, deleteBook } from './books'
 
-  const bookForm = writable({
-    title: '',
-    author: ''
-  })
+  let title = ''
+  let author = ''
 </script>
 
-<form on:submit|preventDefault={() => createBook($bookForm)}>
-  <input type="text" name="title" bind:value={$bookForm.title}>
-  <input type="text" name="author" bind:value={$bookForm.author}>
+<form on:submit|preventDefault={() => createBook(title, author)}>
+  <input type="text" name="title" bind:value={title}>
+  <input type="text" name="author" bind:value={author}>
   <button type="submit">Add</button>
 </form>
 
